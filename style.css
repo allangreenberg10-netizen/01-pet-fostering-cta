@@ -1,0 +1,284 @@
+/* Sets the main page font and removes default spacing */
+body {
+	margin: 0;
+	font-family: "Trebuchet MS", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #eaf6f5;
+}
+
+/* Styles the simple site header above the banner */
+.site-header {
+	padding: 14px 40px;
+	background-color: #0d6078;
+	color: #ffffff;
+	text-align: center;
+}
+
+/* Sets the site name size and removes default heading spacing */
+.site-header h2 {
+	margin: 0;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+/* Creates a tall, eye-catching banner area */
+.cta-banner {
+	min-height: 100vh;
+	padding: 32px 40px 100px 40px;
+	background-color: #0b4f6c;
+	background-image: linear-gradient(rgba(234, 246, 245, 0.12), rgba(11, 79, 108, 0.12)), url("img/cta-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-blend-mode: screen;
+	color: #ffffff;
+	text-align: center;
+}
+
+/* Styles the main call-to-action heading */
+.cta-banner h1 {
+	margin-top: 0;
+	margin-bottom: 32px;
+	font-size: 56px;
+	line-height: 1.2;
+}
+
+/* Styles the short supporting message */
+.cta-banner p {
+	max-width: 760px;
+	margin: 0 auto 52px auto;
+	font-size: 22px;
+	line-height: 1.6;
+}
+
+/* Make the CTA heading and supporting paragraph navy blue */
+.cta-banner h1,
+.cta-banner p {
+    color: #0b1f3a;
+}
+
+/* Makes the link look like a bright button */
+.cta-button {
+	display: inline-block;
+	padding: 16px 30px;
+	background-color: #0b1f3a;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 700;
+	border-radius: 8px;
+}
+
+/* Adds a subtle hover color change */
+.cta-button:hover {
+	background-color: #16345d;
+}
+
+/* Make the primary CTA a centered, constrained button */
+.cta-banner .cta-button:first-of-type {
+	display: inline-block;
+	margin: 0 0 18px 0;
+	padding: 16px 30px;
+	font-size: 20px;
+	font-weight: 700;
+	width: auto;
+	max-width: none;
+}
+
+/* Row wrapper for secondary CTAs */
+.cta-row {
+	text-align: center;
+}
+
+/* Center the secondary CTAs together and give horizontal spacing */
+.cta-row .secondary-button,
+.cta-row .learn-button {
+	display: inline-block;
+	margin: 0 8px;
+}
+
+/* Add a little vertical spacing above the scrolling images when inside the banner */
+.cta-banner .animal-scroll {
+	margin-top: 24px;
+}
+
+/* Creates spacing and background for the section below the banner */
+.foster-info {
+	padding: 30px 30px;
+	background-color: #f4fbfb;
+	text-align: center;
+}
+
+/* Centers the content and keeps it at a readable width */
+.info-columns {
+	max-width: 1050px;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+/* Makes two evenly sized columns using simple inline-block layout */
+.info-column {
+	display: inline-block;
+	width: 48%;
+	vertical-align: middle;
+	font-size: 18px;
+	text-align: left;
+}
+
+/* Adds space between the image and text columns */
+.info-column:first-child {
+	margin-right: 4%;
+}
+
+/* Ensures the image fits neatly in its column */
+.info-column img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+/* Styles the heading in the information column */
+.text-column h3 {
+	margin-top: 0;
+	margin-bottom: 18px;
+	font-size: 36px;
+	color: #0b4f6c;
+}
+
+/* Styles the paragraph text for easy reading */
+.text-column p {
+	margin: 0 0 16px 0;
+	line-height: 1.6;
+	color: #1f4250;
+}
+
+/* Creates the scrolling animal photo section */
+.animal-scroll {
+	padding: 70px 0 90px 0;
+	background-color: #eaf6f5;
+	overflow: hidden;
+	text-align: center;
+}
+
+/* Styles the section heading above the moving photos */
+.animal-scroll h3 {
+	margin: 0 0 28px 0;
+	font-size: 36px;
+	color: #0b4f6c;
+}
+
+/* Hides the moving row outside the visible area */
+.scroll-window {
+	overflow: hidden;
+	width: 100%;
+}
+
+/* Moves the photo cards across the screen in a loop */
+.scroll-track {
+	display: inline-block;
+	white-space: nowrap;
+	animation: scroll-left 24s linear infinite;
+}
+
+/* Keeps each photo card the same size */
+.animal-card {
+	display: inline-block;
+	width: 240px;
+	margin: 0 12px;
+	vertical-align: top;
+	white-space: normal;
+	background: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	text-align: left;
+}
+
+/* Makes each animal photo fit nicely inside its card */
+.animal-card img {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 14px;
+	box-shadow: 0 10px 24px rgba(11, 31, 58, 0.12);
+}
+
+.animal-card:focus-visible {
+    outline: 3px solid rgba(11,79,108,0.18);
+    outline-offset: 6px;
+    border-radius: 14px;
+}
+
+/* Simple footer styles */
+.site-footer {
+	padding: 24px 30px;
+	background-color: #0d6078;
+	color: #ffffff;
+	text-align: center;
+}
+.site-footer a {
+	color: #eaf6f5;
+	text-decoration: underline;
+}
+
+.site-footer .footer-inner {
+	max-width: 1050px;
+	margin: 0 auto;
+}
+.site-footer .footer-col {
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	margin: 0 1.5%;
+	text-align: left;
+	font-size: 14px;
+}
+.site-footer h4 {
+	margin: 0 0 8px 0;
+	font-size: 16px;
+	color: #eaf6f5;
+}
+@media (max-width: 700px) {
+	.site-footer .footer-col {
+		display: block;
+		width: 100%;
+		margin: 8px 0;
+		text-align: center;
+	}
+	.site-footer .footer-col p { text-align: center; }
+}
+
+/* Styles the label under each photo */
+.animal-card p {
+	margin: 12px 0 0 0;
+	font-size: 18px;
+	font-weight: 700;
+	color: #0b1f3a;
+}
+
+/* Defines the horizontal scrolling motion */
+@keyframes scroll-left {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+/* Blink animation for attention-grabbing buttons */
+@keyframes blink {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.2; }
+}
+
+.cta-button.blink {
+	animation: blink 4s linear infinite;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	.cta-button.blink {
+		animation: none;
+		opacity: 1;
+	}
+}

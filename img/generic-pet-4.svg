@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="title desc">
+  <title id="title">Generic pet image 4</title>
+  <desc id="desc">A simple illustrated pet placeholder with a paw icon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1dc"/>
+      <stop offset="100%" stop-color="#f4a261"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="24" fill="url(#bg)"/>
+  <circle cx="128" cy="124" r="40" fill="#ffffff" opacity="0.9"/>
+  <ellipse cx="128" cy="188" rx="76" ry="52" fill="#ffffff" opacity="0.9"/>
+  <circle cx="109" cy="112" r="9" fill="#0b1f3a"/>
+  <circle cx="147" cy="112" r="9" fill="#0b1f3a"/>
+  <path d="M115 136c10 8 20 8 30 0" fill="none" stroke="#0b1f3a" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#0b1f3a" opacity="0.8">
+    <circle cx="284" cy="118" r="16"/>
+    <circle cx="320" cy="106" r="12"/>
+    <circle cx="337" cy="135" r="12"/>
+    <circle cx="300" cy="146" r="12"/>
+    <path d="M278 134c0-15 12-27 27-27 10 0 19 5 24 13 2 3 0 8-4 9-9 3-17 10-20 19-1 4-6 6-9 4-10-4-18-15-18-18z"/>
+  </g>
+</svg>
